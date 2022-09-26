@@ -1,0 +1,6 @@
+
+docker run -it --rm -v S:/Estudo/Taurus-Jmeter/tmp/my-test:/bzt-configs blazemeter/taurus my-config.yml
+
+docker run -it --rm -v S:/Estudo/Taurus-Jmeter/tmp\my-test:/bzt-configs  -v S:/Estudo/Taurus-Jmeter/tmp\artifacts:/tmp/artifacts blazemeter/taurus my-config.yml
+
+docker run -it --network="host" --rm -v S:/Estudo/Taurus-Jmeter/tmp\my-test:/bzt-configs  -v S:/Estudo/Taurus-Jmeter/tmp\artifacts:/tmp/artifacts blazemeter/taurus my-config.yml
